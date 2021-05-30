@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-grey: #a0a0a0;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+
+  --text-color: var(--color-black);
+
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  --section-header-padding: 0 0 3rem;
+
+  /** BUTTON **/
+  --button-display: inline-block;
+  --button-padding: 1.5rem 3rem;
+  --button-border: var(--color-primary) solid 0.2rem;
+  --button-color: var(--color-black);
+  --button-text-decoration: none;
+  --button-font-size: var(--font-size-large);
+  --button-hover-color: var(--color-white);
+  --button-hover-text-decoration: none;
+  --button-hover-background: var(--color-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+body {
+  margin: auto;
+  padding: 0;
+  background: url(../images/fondoinicio.png) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.header {
+  padding: var(--header-padding);
+  position: relative;
+  z-index: 3;
+  background: transparent;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-family: 'Karla', sans-serif;;
+}
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-hero {
+  position: relative;
+  margin-top: -8.5rem;
+}
+
+.section-hero .section-title {
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-hero .section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.section-hero .section-body {
+  padding: 10rem 4rem;
+}
+
+.section-hero .section-category {
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 350%;
+}
+
+.form-group {
+  padding: 1rem;
+  margin: 0;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
+  font-family: 'Karla', sans-serif;;
+  
+}
+
+.button:hover {
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background: var(--button-hover-background);
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
+}
+
+.button-primary {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.button-primary:hover {
+  color: var(--color-primary);
+  background: var(--color-white);
+}
+
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  display: none;
+}
+
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #AF8BE3;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
